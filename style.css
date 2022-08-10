@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    background: #000022;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+  }
+
+  .container {
+    text-align: center;
+    width: 300px;
+    margin: 20px auto;
+  }
+
+  img {
+    width: 100%; 
+  }
+
+  img.avatar {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    padding: 3.7px;
+    border: #17f499 solid 4px;
+  }
+
+  h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  .username {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 20px 0;
+  }
+
+  ul li a {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00003f; /* hex: 0 - F */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    transition: background 400ms;
+  }
+
+    /* pseudo-class */
+    ul li a:hover {
+      background: #00001a;
+  }
+
+  ul li .btn-whatsapp {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366; /* hex: 0 - F */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    transition: background 400ms;
+  }
+
+  footer {
+    font-weight: 500;
+    font-size: 12px;
+    color: #f2f2f2;
+    opacity: 0.6;
+    transition: opacity 400ms;
+  }
+
+  footer:hover {
+    opacity: 1;
+  }
+
+  footer a{
+    color: #f2f2f2;
+  }
+
+
+  .pulsingButton {
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    display: flex;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 0 #25D366b3;
+    background-color: #25D366;
+    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    font-size: 14px;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    color: #ffffff;
+    transition: all 300ms ease-in-out;
+  }
+  
+  
+  /* Comment-out to have the button continue to pulse on mouseover */
+  
+  a.pulsingButton:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none;
+    color: #ffffff;
+  }
+  
+  
+  /* Animation */
+  
+  @-webkit-keyframes pulsing {
+    to {
+      box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+    }
+  }
+  
+  @-moz-keyframes pulsing {
+    to {
+      box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+    }
+  }
+  
+  @-ms-keyframes pulsing {
+    to {
+      box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+    }
+  }
+  
+  @keyframes pulsing {
+    to {
+      box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+    }
+  }
